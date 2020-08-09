@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Push All",
+            "type": "shell",
+            "command": "adb push 'D:/icmod/Deep Mob Learning/src/.' '/storage/emulated/0/games/horizon/packs/Inner_Core/innercore/mods/Deep Mob Learning/.'",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Push Codes",
+            "type": "shell",
+            "command": "adb push 'D:/icmod/Deep Mob Learning/src/dev/.' '/storage/emulated/0/games/horizon/packs/Inner_Core/innercore/mods/Deep Mob Learning/dev/.'",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
